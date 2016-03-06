@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableName
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com SimpleSchema2.xsd">
+  <RowData>
+    <BriefingMessage>Hello          </BriefingMessage>
+    <BriefingEnabled>true           </BriefingEnabled>
+  </RowData>
+  <RowData>
+    <BriefingMessage>Goodbye        </BriefingMessage>
+    <BriefingEnabled>true           </BriefingEnabled>
+  </RowData>
+</TableName>

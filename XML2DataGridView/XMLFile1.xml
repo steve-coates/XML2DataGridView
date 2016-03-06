@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SimpleTable>
+  <Graph Version="3.0" Mode="static">
+    <Range>
+      <X Min="-20" Max="20" />
+      <Y Min="-20" Max="20" />
+    </Range>
+    <Lines>
+      <Line Name="MyLine1" R="0" G="255" B="0">
+        <Point X="-17" Y="9" />
+        <Point X="7" Y="-5" />
+        <Point X="10" Y="4" />
+        <Point X="-6" Y="2" />
+      </Line>
+      <Line Name="MyLine2" R="255" G="0" B="0">
+        <Point X="-7" Y="3" />
+        <Point X="8" Y="-1" />
+        <Point X="-4" Y="-4" />
+        <Point X="-1" Y="6" />
+      </Line>
+    </Lines>
+  </Graph>
+</SimpleTable>

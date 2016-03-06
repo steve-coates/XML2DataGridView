@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PassengerBriefingTable
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com SimpleSchema1.xsd">
+  <Briefing>
+    <BriefingMessage>Hello          </BriefingMessage>
+    <Enabled>true           </Enabled>
+  </Briefing>
+  <Briefing>
+    <BriefingMessage>Goodbye        </BriefingMessage>
+    <Enabled>true           </Enabled>
+  </Briefing>
+</PassengerBriefingTable>
