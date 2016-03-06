@@ -52,6 +52,7 @@ namespace XML2DataGridView
                     foreach (DataTable table in dataSet.Tables)
                     {
                         TabPage tabPage1 = new TabPage();
+                        tabPage1.SuspendLayout();
                         tabPage1.Name = table.ToString();
                         tabPage1.Name = dataSet.DataSetName;
                         tabPage1.Text = tabPage1.Name;
@@ -64,26 +65,25 @@ namespace XML2DataGridView
 
                         DataGridView dataGridView1 = new DataGridView();
                         dataGridView1.DataSource = dataSet;
-//                        dataGridView1.DataMember = "TableName";
                         dataGridView1.DataMember = "RowData";
                         dataGridView1.Visible = true;
 
-                        System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle = new System.Windows.Forms.DataGridViewCellStyle();
                         dataGridView1.AllowUserToAddRows = false;
                         dataGridView1.AllowUserToDeleteRows = false;
-                        //dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-                        //dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle;
-                        //dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-                        //dataGridViewCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-                        //dataGridViewCellStyle.BackColor = System.Drawing.SystemColors.Control;
-                        //dataGridViewCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                        //dataGridViewCellStyle.ForeColor = System.Drawing.SystemColors.WindowText;
-                        //dataGridViewCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-                        //dataGridViewCellStyle.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-                        //dataGridViewCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-                        //dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle;
-                        //dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        
+                        dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+                        dataGridView1.DefaultCellStyle.BackColor = System.Drawing.Color.DarkGray;
+                        dataGridView1.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+
+                        dataGridView1.EditMode = DataGridViewEditMode.EditOnEnter;
+                        dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                        dataGridView1.Name = "dataGridView1";
+                        dataGridView1.Location = new Point(8, 8);
+                        dataGridView1.Size = new Size(500, 300);
+                        dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+                        dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Raised;
+                        dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+                        dataGridView1.GridColor = SystemColors.ActiveBorder;
+                        dataGridView1.RowHeadersVisible = false;
 
                         tabPage1.SuspendLayout();
                         tabPage1.Controls.Add(dataGridView1);
