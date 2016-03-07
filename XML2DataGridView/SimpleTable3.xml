@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableName
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com SimpleSchema3.xsd">
+  <RowData>
+    <BriefingLanguage>English</BriefingLanguage>
+  </RowData>
+  <RowData>
+    <BriefingLanguage>German</BriefingLanguage>
+  </RowData>
+  <RowData>
+    <BriefingLanguage>French</BriefingLanguage>
+  </RowData>
+  <RowData>
+    <BriefingLanguage>Arabic</BriefingLanguage>
+  </RowData>
+  <RowData>
+    <BriefingLanguage>Gobbledegook</BriefingLanguage>
+  </RowData>
+</TableName>
